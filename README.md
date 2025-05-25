@@ -21,6 +21,6 @@ The graphing feature leverages the Desmos Graphing Calculator API for dynamic re
 ⚒️How to Use the Program
 1.) Open your terminal and navigate to the location where you want to clone the repository:
 2.) Run the following command to clone the repository in your terminal :
-     git clone 
+     git clone https://github.com/zksd53/GRAPHING-CALCULATOR
 3.) Make sure you have Live Server installed in your code editor (like VS Code).
 4.) If installed, right-click on the index.html (or main HTML file) and select "Open with Live Server" to launch the project in your browser. 
