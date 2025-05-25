@@ -11,10 +11,9 @@
     });
 
     document.querySelector('.Graph').addEventListener('click', function () {
-        let elt = document.getElementById('calculator');
-        let calculator = Desmos.GraphingCalculator(elt);
-        calculator.setExpression({ id: 'graph1', latex: 'y=x^2' });
-    });
+        
+        window.location.href = 'a.html';
+});
 
     document.querySelector('.clear').addEventListener('click',function(){
         valueDisplayed.textContent = 0;

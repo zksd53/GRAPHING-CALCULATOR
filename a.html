@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Graph with Desmos</title>
+  <script src="https://www.desmos.com/api/v1.11/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+  <style>
+
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center; 
+      align-items: center;     
+      background: #f0f0f0;
+    }
+
+    #calculator {
+      width: 900px;   
+      height: 600px;  
+      border: 2px solid #333;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="calculator"></div>
+
+  <script>
+    const elt = document.getElementById('calculator');
+    const calculator = Desmos.GraphingCalculator(elt);
+
+    function graphExpression() {
+      const userInput = prompt("Enter an equation (e.g., y = x^2):");
+      if (userInput) {
+        calculator.setExpression({ id: 'userGraph', latex: userInput });
+      }
+    }
+
+  </script>
+
+</body>
+</html>
